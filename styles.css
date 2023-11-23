@@ -384,7 +384,7 @@ F O R M   C E S A R
 }
 
 .button-check:checked {
-  accent-color: hotpink;
+  accent-color: var(--clr-accent);
   background: var(--clr-accent);
 }
 
