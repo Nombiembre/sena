@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-flex">
+        <a href="index.html"><img class="pp" src="imagenes/profile.png" alt="Foto hoja de vida" /></a>
+        <div>
+          <h1 class="primary-header">Hoja de Vida</h1>
+          <p class="upper">Enmanuel Toro Marin</p>
+        </div>
+        <nav>
+          <img src="imagenes/hamburger.svg" class="hamburger" alt="">
+          <ul class="primary-nav upper" role="list">
+            <li><a href="https://Nombiembre.github.io" target="_blank">Glosario</a></li>
+            <li><a href="cifrado.html">Cifrado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <form class="line form-contacto">
+        <input type="text" id="name" required placeholder="Nombre:" />
+
+        <input type="mail" id="mail" required placeholder="mail@example.com" />
+
+        <input type="text" id="asunto" required placeholder="Asunto:" />
+
+        <textarea name="" id="mensaje" rows="2" required placeholder="Mensaje:"></textarea>
+        <button class="button">Envia Mensaje</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy Copy Right 2023 - UCS</p>
+    </footer>
+    <script src="nav.js"></script>
+  </body>
+</html>

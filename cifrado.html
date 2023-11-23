@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="imagenes/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <div class="container header-flex">
+        <a href="index.html"><img class="pp" src="imagenes/profile.png" alt="Foto hoja de vida" /></a>
+        <div>
+          <h1 class="primary-header">Hoja de Vida</h1>
+          <p class="upper">Enmanuel Toro Marin</p>
+        </div>
+        <nav>
+          <img src="imagenes/hamburger.svg" class="hamburger" alt="" />
+          <ul class="primary-nav upper" role="list">
+            <li><a href="https://Nombiembre.github.io" target="_blank">Glosario</a></li>
+            <li><a href="cifrado.html">Cifrado</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="container flow-content">
+        <h2 class="primary-header center">Cifrado Cesar</h2>
+
+        <form class="form-cifrado line flow-content-xl" name="FormularioCiframiento">
+          <div>
+            <label for="Rotacion">Rotacion alfabeto:</label>
+            <input type="text" name="Rotacion" id="Rotacion" />
+            <div class="flex">
+              <input type="checkbox" name="Usar_Clave" id="Usar_Clave" checked="checked" class="button-check" />
+              <label for="Usar_Clave">Activar uso de clave</label>
+            </div>
+            <div id="claveToggle" class="hidden">
+              <label for="Clave">Clave: </label>
+              <input type="text" name="Clave" id="Clave" />
+              <label for="Desplazamiento_Clave">Desplazamiento Clave: </label>
+              <input type="text" name="Desplazamiento_Clave" id="Desplazamiento_Clave" />
+            </div>
+            <label>Texto a Procesar:</label>
+            <textarea rows="4" cols="70" id="Texto_Origen" name="Texto_Origen" placeholder="(maximo 1000 caracteres)"></textarea>
+          </div>
+
+          <div class="button-cifrado">
+            <button class="button" type="button" onclick="Cifrado()">Cifrar</button>
+            <button class="button" type="button" onclick="Descifrado()">Descifrar</button>
+          </div>
+
+          <div class="alfabeto line flow-content">
+            <p id="Alfabeto_Origen">Alfabeto Origen:</p>
+            <p id="Alfabeto_Cifrado">Alfabeto Cifrado:</p>
+          </div>
+
+          <div class="resultado line">
+            <label for="Resultado" style="display: inline">Texto convertido:</label>
+            <div id="Resultado">
+              <p id="Texto_Cifrado">&nbsp;</p>
+            </div>
+          </div>
+        </form>
+      </div>
+    </main>
+    <footer>
+      <p>&copy Copy Right 2023 - UCS</p>
+    </footer>
+    <script src="nav.js"></script>
+    <script src="show.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
